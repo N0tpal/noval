@@ -7,7 +7,7 @@ echo "\e[96m       INI SCRIPT CLAIM VOUCHER GOJEK YAGESYA                \n";
 echo "\e[96m              GUNAKANLAH DENGAN BIJAK                 \n";
 echo "\e[96m          SCRIPT INI TIDAK DI JUAL BELIKAN               \n";
 echo "\e[96m                 FOLLOW IG ADMIN:               \n";
-echo "\e[96m                    ZAQI.ART_                       \n";
+echo "\e[96m                    MNOVALRIZKY                       \n";
 echo "\e[96m             JANGAN LUPA FOLLOW YA         \n";
 echo "\e[96m ********\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m********\n";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -36,7 +36,7 @@ function change(){
         ulang:
         echo color("green","└──> Nomor : ");
         $no = trim(fgets(STDIN));
-        $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$no.'","signed_up_country":"ID"}';
+        $data = '{"email":"'.$email.'@gmail.com","name":"noval rizky","phone":"+'.$no.'","signed_up_country":"ID"}';
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
@@ -71,7 +71,7 @@ function change(){
                 echo color("white","│   [x1] DISKON 50% Naik GoRide pake GoPay maks. Rp25.000  │ \n");
                 sleep(1);
                 echo color("white","│                 [x1] DISKON GO-FOOD 50%!                 │ \n");
-                echo color("white","┌──────────────────── [ - ZAQI GANS - ] ───────────────────╯ \n");
+                echo color("white","┌──────────────────── [ - NOVAL GANS - ] ───────────────────╯ \n");
                 for($a=1;$a<=6;$a++){
                         echo color("green","Voucher Sudah Di Claim");
                         sleep(2);
@@ -134,9 +134,9 @@ function change(){
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
          echo color("white","╭───────────────── [ Set Pin ] ─────────────────╮")."\n";
-         echo color("white","│               PIN ANDA : 110508               │"),"\n";
+         echo color("white","│               PIN ANDA : 081360               │"),"\n";
          echo color("white","┌───────────────────────────────────────────────╯"),"\n";
-         $data2 = '{"pin":"110508"}';
+         $data2 = '{"pin":"081360"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "└──> Otp set pin: ";
          $otpsetpin = trim(fgets(STDIN));
